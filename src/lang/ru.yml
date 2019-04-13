@@ -812,6 +812,7 @@ CORE_COMMAND_HELP:
  - '§7/core proxys §f- список подключенных прокси'
  - '§7/core servers §f- список подключенных серверов'
  - '§7/core hide §f- скрыть себя'
+ - '§7/core norify §f- переключить уведомления ядра'
 CORE_NPC_COMMAND_HELP:
  - '§6NPC §8| §fСписок команд:'
  - '§7/core npc create <id> <тип> <название> §f- создание npc'
@@ -1931,6 +1932,9 @@ NO_PERMISSION_STATS: '§cОшибка, просматривать статист
 STAFFCHAT_ENABLED: '§cМодерация §8| §f%s §7снова видит чат персонала'
 STAFFCHAT_DISABLED: '§cМодерация §8| §f%s §7теперь не видит чат персонала'
 YOU_DISABLED_STAFFCHAT: '§cВы отключили чат персонала. Чтобы писать в него, нажмите на листок в лобби в инвентаре'
+
+CORE_NOTIFY_ENABLED: '§cМодерация §8| §f%s §7снова видит уведомления ядра'
+CORE_NOTIFY_DISABLED: '§cМодерация §8| §f%s §7теперь не видит уведомления ядра'
 
 CHAT_DISABLE_INFO: |-
  §4§lВнимание! §cЧат отключен!
