@@ -11,12 +11,19 @@ BANINFO_BY_ANOTHER: '§7[по просьбе %s§7]'
 BAN_REQUEST_SENT: '§eВаша просьба заблокировать данного игрока отправлена всем онлайн-модераторам'
 BAN_REQUEST_ALREADY_SENT: '§cПросьба заблокировать данного игрока уже отправлялась, ожидайте решения'
 BAN_REQUEST_BROADCAST: '§cМодерация §8| §7%s §7просит заблокировать %s §7на §7%s §7по причине §e%s'
+BANIP_REQUEST_SENT: '§eВаша просьба заблокировать данный ip адрес отправлена всем онлайн-модераторам'
+BANIP_REQUEST_ALREADY_SENT: '§cПросьба заблокировать данный ip адрес уже отправлялась, ожидайте решения'
+BANIP_REQUEST_BROADCAST: '§cМодерация §8| §7%s §7просит заблокировать ip адрес §a%s§7 на §7%s §7по причине §e%s'
 BAN_REQUEST_ACCEPT_BROADCAST: '§cМодерация §8| %s§a одобрил §7просьбу на блокировку §e%s'
 BAN_REQUEST_REJECT_BROADCAST: '§cМодерация §8| %s§c отклонил §7просьбу на блокировку §e%s'
+BANIP_REQUEST_ACCEPT_BROADCAST: '§cМодерация §8| %s§a одобрил §7просьбу на блокировку адреса §a%s'
+BANIP_REQUEST_REJECT_BROADCAST: '§cМодерация §8| %s§c отклонил §7просьбу на блокировку адреса §a%s'
 BAN_ACCEPT_FORMAT: '/banrequests accept <ник нарушителя>'
 BAN_REJECT_FORMAT: '/banrequests reject <ник нарушителя>'
 BAN_REQUEST_HOVER: '§fНажмите, чтобы принять запрос'
 BAN_REQUEST_NOT_FOUND: '§cЗапрос на блокировку игрока %s не найден или уже закрыт'
+BANIP_REQUEST_ACCEPT: '%s §aОдобрил ваш запрос на блокировку адреса %s'
+BANIP_REQUEST_REJECT: '%s §cОтклонил ваш запрос на блокировку адреса %s'
 BAN_REQUEST_ACCEPT: '%s §aОдобрил ваш запрос на блокировку %s'
 BAN_REQUEST_REJECT: '%s §cОтклонил ваш запрос на блокировку %s'
 BAN_REQUEST_FOR_PERSONAL:
@@ -212,7 +219,7 @@ PLAYER_GUILD_BUY_MOTD:
 - ' §fДля задания сообщения при входе используйте следующие команды:'
 - ' §7/guild motd set <текст> §f- изменить приветствие гильдии'
 - ' §7/guild motd info §f- просмотреть текущее приветствие гильдии'
-- ' §fДля переноса строчки, используйте символ §6;n§f в приветствии'
+- ' §fДля переноса строчки, используйте символ §6\n§f в приветствии'
 - ''
 PLAYER_GUILD_BUY_TAG:
 - ''
@@ -222,6 +229,15 @@ PLAYER_GUILD_BUY_TAG:
 - ' §fпосле ника каждого участника Вашей гильдии'
 - ' §fДля этого используйте команду §7/guild tag'
 - ''
+
+PLAYER_GUILD_YOU_KICKED: |-
+ §6Гильдии §8| §fВы были удалены из гильдии §e%s
+ §c • §f%s: §a%s
+ §c • §fПричина: §a%s
+  
+ §c • §fДата: §a%s
+ §c • §e%s назад
+  
 
 PLAYER_MARKETING_ACTIONBAR_TIME: '§cДо окончания игры осталось: %s'
 PLAYER_MARKETING_START_ONE: |-
@@ -751,6 +767,8 @@ PLAYER_NAME_19: 'Лидерша'
 PLAYER_NAME_20: 'Лидер'
 PLAYER_NAME_21: 'изменила'
 PLAYER_NAME_22: 'изменил'
+PLAYER_NAME_23: 'Исключила'
+PLAYER_NAME_24: 'Исключил'
 
 PROXY_COMMAND_HELP:
 - '§7/proxy info §f- Информация о вашем подключении к прокси'
@@ -1248,7 +1266,7 @@ GUILD_REJECT_ALERT: '§2Гильдия §8| %s §7отклонил ваш зап
 GUILD_REJECT: '§6Гильдии §8| §fВы отклонили запрос в гильдию §a%s'
 
 GUILD_TAG_FORMAT: '/guild tag <тег>'
-GUILD_TAG_LIMIT: '§6Гильдии §8| §fТег гильдии не должен превышать §c15§f символов'
+GUILD_TAG_LIMIT: '§6Гильдии §8| §fТег гильдии не должен превышать §c14§f символов'
 GUILD_TAG_ALERT: '§2Гильдия §8| %s §fустановил тег гильдии -> §e%s'
 GUILD_TAG: '§6Гильдии §8| §fТег гильдии установлен на §a%s'
 GUILD_TAG_NO_MONEY: '§cГильдии нехватает %s монет для изменения тега гильдии'
@@ -2117,7 +2135,7 @@ ECONOMY_MONEY_CHANGE_BROADCAST: '§6Экономика §8| %s§7 начисли
 ECONOMY_KTEMS_CHANGE_BROADCAST: '§6Экономика §8| %s§7 начислил на аккаунт %s§7 - §5Ктемы §f(§a+%s§f'
 ECONOMY_GOLDS_CHANGE_BROADCAST: '§6Экономика §8| %s§7 начислил на аккаунт %s§7 - §eКристаллы §f(§a+%s§f)'
 
-LAST_UPDATES_INFO: '§6Обновления §8| §fБыло сделано §a%s§f %s'
+LAST_UPDATES_INFO: '§c⚠ Внимание §6Обновления §8| §fБыло сделано §a%s§f %s'
 LAST_UPDATES: '§6Обновления §8| §f%s'
 LAST_STAFF_UPDATES_INFO: '§cОбновления §8| §fБыло сделано §a%s§f %s для персонала'
 LAST_STAFF_UPDATES: '§cОбновления §8| §f%s'
@@ -2169,6 +2187,7 @@ GUI_PROFILE_LORE:
 - '§7Донатных ключей: §b%s'
 - '§7Обычных ключей: §3%s'
 - '§7Друзей: §e%s§7/§a%s'
+- '§7Скин: §e%s'
 
 GUI_PROFILE_SETTING_LORE:
 - '§7Персональные настройки'
@@ -3162,6 +3181,7 @@ GUI_GAMES_LOBBY_LORE:
 
 GUI_YOUTUBERS_NAME: 'Список ютуберов'
 GUI_BUILDERS_NAME: 'Список строителей'
+GUI_DEVELOPERS_NAME: 'Список разработчиков'
 GUI_STAFF_NAME: 'Список персонала (%s)'
 GUI_GROUP_NAME: 'Список игроков с группой - %s'
 GUI_GROUP_NO_FOUND: '§cВ данный момент нет людей состоящих в %s'
@@ -3172,6 +3192,7 @@ GUI_GROUP_NO_FOUND_LORE:
 - '§7состоящего в %s.'
 GUI_YOUTUBERS_ITEM: '§eСписок ютуберов'
 GUI_BUILDERS_ITEM: '§eСписок строителей'
+GUI_DEVELOPERS_ITEM: '§eСписок разработчиков'
 GUI_STAFF_ITEM: '§eСписок персонала'
 GUI_GROUP_ITEM: '§eСписок игроков с группой - %s'
 GUI_DEFAULT: 'Игроков'
@@ -3190,6 +3211,7 @@ GUI_JUNIOR: 'Младших хелперов'
 GUI_HELPER: 'Хелперов'
 GUI_MODER: 'Модераторов'
 GUI_ADMIN: 'Администраторов'
+GUI_DEVELOPER: 'Разработчиков'
 GUI_NO_DEFAULT: 'Игроках'
 GUI_NO_PREMIUM: 'Премиумах'
 GUI_NO_GOLD: 'Голдах'
@@ -3206,6 +3228,7 @@ GUI_NO_JUNIOR: 'Младших хелперах'
 GUI_NO_HELPER: 'Хелперах'
 GUI_NO_MODER: 'Модераторах'
 GUI_NO_ADMIN: 'Администраторах'
+GUI_NO_DEVELOPER: 'Разработчиках'
 GUI_STAFF_ITEM_LORE:
 - ''
 - '§7%s'
@@ -3494,6 +3517,12 @@ GUI_FRIENDS_ITEM_LORE:
 - ''
 - '§7Всего друзей §a%s'
 - '§7Онлайн друзей: §a%s'
+GUI_FRIENDS_LORE:
+- ''
+- '§7Уровень: §d%s'
+- '§7Монет: §6%s'
+- '§7Ктемов: §f%s'
+- '§7Кристаллов: §e%s'
 GUI_FRIENDS_ONLINE_LORE:
 - ''
 - '§7Сейчас на сервере: §e%s'
@@ -3505,7 +3534,7 @@ GUI_FRIENDS_CONNECT_LORE:
 - '§e▶ Кликните чтобы телепортироватся к другу на сервер'
 GUI_FRIENDS_OFFLINE_LORE:
 - ''
-- '§7Последний раз %s в сети'
+- '§7Последний раз %s в сети:'
 - '§e%s назад'
 - ''
 - ' §c✗ Сейчас оффлайн '
@@ -4588,7 +4617,7 @@ GUI_BANREQUESTS_EMPTY_LORE:
 - '§7на блокировку'
 GUI_BANREQUESTS_LORE:
 - ''
-- '§7Ник нарушителя: %s'
+- '§7Нарушитель: %s'
 - '§7Просит заблокировать: %s'
 - '§7На срок: §e%s'
 - ''
